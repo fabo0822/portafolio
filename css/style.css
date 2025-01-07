@@ -353,7 +353,7 @@ footer{
     gap: 1em;
 }
 
-.col-right .social-icons i{
+.col-right .social-icons a{
     font-size: 2em;
     transition: 0.2s ease-in-out;
     cursor: pointer;
