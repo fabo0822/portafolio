@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <ul class="links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#services">Proyects</a>
             <a href="#contact">Contact</a>    
         </ul>
         <i class='bx bx-menu-alt-right' id="menu"></i>
@@ -23,7 +24,7 @@
         <a href="#contact" class="btn">Contact Me</a>
     </nav>
     <section id="home">
-        <img src="images/fabian.jpeg" alt="">
+        <img src="images/fabi.png" alt="">
         <div class="info-box">
         <h1><span>Hello I'm Fabian</span></h1>
         <h3><span>web developer</span></h3>
@@ -81,35 +82,37 @@
 
     </section>
     <section id="services">
-        <h1 class="header"><span>Services</span></h1>
+        <h1 class="header"><span>Proyects</span></h1>
 
         <div class="services-container">
             <div class="box">
-                <h1><span> Development of Simple Web Applications</span></h1>
-
-                <p>Create dynamic web pages using HTML, CSS, and JavaScript.<br>
-                    Implement interactive functionalities on the frontend with JavaScript.</p>
-                <img src="images/3.jpg" alt="imagen de un portatil">
-
-            </div>
-
-            <div class="box">
-                <h1><span>Database Management with MySQL</span></h1>
+               
+                <h1><span>Mapa Colmbia</span></h1>
                 
-                <p>I don't know it yet, but I plan to learn it in the future.<br>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, fuga error ex enim ipsum, voluptatem, temporibus quos optio repellat alias vel totam! Quidem fuga nostrum magni ipsum illo, molestiae minima.
+                <p>primera pagina creada por mi persona, mapa de colombia en el cual al acerle click en uno de los 5 departamentos elejidos para este proyecto , los llevara a otra pagina en la cual encontrara toda la informacion de ese departamento. 
                 </p>
-
-                <img src="images/pc2.png" alt="imagen de un portatil">
+                <a href="https://mapcolombia.netlify.app/" target="_blank">
+                <img src="images/mapa.png" alt="imagen del proyecto"></a>
 
             </div>
 
             <div class="box">
-                <h1><span>Interactivity and Functionality with JavaScript</span></h1>
-                <P>Implement dynamic frontend interactions, such as dropdown menus, modals, and sliders.<br>
-                    Create small interactive web applications using plain JavaScript or lightweight frameworks.
-                    </P>
-                <img src="images/53665.jpg" alt="">
+                
+                <h1><span>Venta de Hamburguesas</span></h1>
+                
+                <p>proyecto que consiste en una pagina responsiva de venta de Hamburguesas , en la cual se podia encontrar difentes menus y precios ,los lenguajes utlizados para desarrollarla fueron Html,Css y JavaScript
+                </p>
+                <a href="https://venta-de-hamburguesas.netlify.app/" target="_blank">
+                <img src="images/hamburguesa.png" alt="imagen del proyecto"></a>
+
+            </div>
+
+            <div class="box">
+                <h1><span>Conciertos Conectados</span></h1>
+
+                <p>aplicación de eventos de música que permite a los usuarios explorar, comprar y gestionar entradas para diversos conciertos y eventos musicales, la plataforma ofrecerá una experiencia intuitiva y enriquecedora.</p>
+                <a href="https://proyectohtmlycss22.netlify.app/" target="_blank">
+                <img src="images/evento.png" alt="imagen del proyecto"></a>
 
             </div>
         </div>
@@ -118,20 +121,20 @@
     <section id="contact">
         <h1 class="header"><span>Contact</span></h1>
 
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
                 <span>Full Name</span>
-                <input type="text" placeholder="Enter Your Full Name">
+                <input type="text" name="full_name" placeholder="Enter Your Full Name">
             </div>
             <div class="input-box">
                 <span>Your Email</span>
-                <input type="text" placeholder="Enter Your Email">
+                <input type="text" name="email" placeholder="Enter Your Email">
             </div>
             <div class="input-box">
                 <span>Your Messege</span>
-                <input type="text" placeholder="Enter Your Messege">
+                <input type="text" name="message" placeholder="Enter Your Messege">
             </div>
-            <div class="btn">submit</div>
+            <button type="submit" class="btn">submit</button>
         </form>
 
     </section>
@@ -168,6 +171,8 @@
             </div>
         </div>
     </footer>
+
     <script src="js/app.js"></script>
+
 </body>
 </html>
